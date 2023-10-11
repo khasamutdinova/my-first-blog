@@ -1,0 +1,9 @@
+Entry.objects.filter(body_text__contains = 'Music', entry__pub_date__year=2010)
+
+Entry.objects.filter(blog__name="Technology")
+
+Art.objects.filter(comment_count__gte=15, comment_count__gte>15)
+
+Entry.objects.order_by('-date')[:10]
+
+Entry.objects.filter(date_published__month=4, date_published__day__gte=1, date_published__day__lte=30)
